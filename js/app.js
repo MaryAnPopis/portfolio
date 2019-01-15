@@ -1,3 +1,8 @@
+// css files
+import "../css/reset.css";
+import "bootstrap/dist/css/bootstrap-grid.css"
+import "../css/main.css";
+
 const navbarToggler = document.querySelector('.navbar-toggler');
 const navbarMenu = document.querySelector('.navbar ul');
 
