@@ -1,0 +1,454 @@
+html *{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+section{
+  padding-bottom: 3.5rem;
+}
+
+/* navbar */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0 0 0;
+  z-index: 1;
+}
+
+.navbar ul li{
+  display: inline-block;
+  padding: 0 0 0 1rem;
+  text-align: center;
+}
+
+.navbar a {
+  color : #083232;
+}
+
+.navbar .navbar-toggler {
+  display: none;
+}
+
+/* home section */
+
+.avatar-container{
+  margin: 0;
+  width: 60%;
+  margin-bottom: 1rem;
+}
+
+.avatar{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* resize images */
+.avatar-container img {
+  width: 100%;
+  height: auto;
+}
+
+.hero{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-line{
+  padding: 10% 0 0 0;
+  font-size: 3.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.description{
+  font-size: 1.6rem;
+  color:#8F9EA5;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.highlight{
+  color:#6132F5;
+}
+
+.media a {
+  padding: 0 0 0 0.5rem;
+}
+
+.education, .qa{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 8rem;
+}
+
+.education-image img {
+  width: 90%;
+  margin-bottom: 0;
+}
+
+.qa-image img{
+  width: 120%;
+  margin-bottom: 0;
+}
+
+.description-title{
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  color:#083232;
+  margin-bottom: 2.5rem;
+}
+
+.description-text{
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 2.4rem;
+  letter-spacing: 0.1rem;
+}
+
+/* skills section */
+
+.yellow-svg img{
+  position: absolute;
+  height: 90rem;
+  width: 100%;
+  left: 0;
+  top: 280%;
+  z-index: -1;
+}
+
+.yellow-svg-mobile{
+  display: none;
+}
+
+.card-container{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 1;
+
+}
+
+.card{
+  padding:2rem;
+  width: 21.9rem;
+  min-height: 37rem;
+  background-color: white;
+  border-radius: 1rem;
+  -webkit-box-shadow: 2px 2px 9px 3px rgba(0,0,0,0.13);
+  -moz-box-shadow: 2px 2px 9px 3px rgba(0,0,0,0.13);
+  box-shadow: 2px 2px 9px 3px rgba(0,0,0,0.13);
+  margin: 0 auto;
+}
+
+.card h3{
+  font-size:1.8rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.card span{
+  display: block;
+}
+
+section h2{
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  display: block;
+  text-align: center;
+  padding: 2rem 0 2rem 0 ;
+}
+
+.card-icon{
+  padding: 1rem 0;
+}
+
+.card-icon img{
+  height: 5rem;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* mini projects */
+
+.light{
+  color: #8C8F91;
+}
+
+.project-container{
+  width: 120%;
+  border-radius: 3rem;
+}
+
+.project-container img {
+  width: 100%;
+  height: auto;
+  padding: 0 0 3rem 0;
+}
+
+.icon svg{
+  width: 5%;
+  color:white;
+}
+
+.project-container__title{
+  display: inline;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  padding-bottom: 0.2rem;
+}
+
+.project-container__title h3{
+  -webkit-box-shadow: 1px 0px 11px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    1px 0px 11px 0px rgba(50, 50, 50, 0.5);
+  box-shadow:         1px 0px 11px 0px rgba(50, 50, 50, 0.5);
+}
+
+.project-container__goto{
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  padding-bottom: 0.2rem;
+}
+
+.project-container--info{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.text-right{
+  text-align: right;
+  z-index: 1;
+}
+
+
+/* hobbies */
+
+.hobbies .col-sm-12{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.banner-hobbie img{
+  width: 65%;
+  padding-bottom: 3rem;
+}
+
+.banner-hobbie--right{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* footer */
+
+footer{
+  color:#083232;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  background-color: #F3F6FF;
+}
+
+@media (max-width: 767px){
+
+  .reverse-position-mobile{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .avatar-container{
+    margin: 0 auto;
+  }
+
+  .navbar, .navbar ul li{
+    display: block;
+    font-size:1.5rem;
+  }
+
+  .navbar-brand{
+    font-size: 2rem;
+  }
+
+  /* Setting the heigh to 0 to hide it */
+  .navbar ul {
+    padding: 2rem 0;
+    width: 100%;
+    height: 100vh;
+    max-height: 0;
+    overflow: hidden;
+    transition: all ease-in-out 0.3s;
+  }
+
+  /* With js applied this class to open the menu */
+  .navbar ul.open {
+    max-height: 100vh;
+  }
+
+  .navbar ul li a:hover{
+    border-bottom: 2px solid #083232;
+  }
+
+  .navbar ul li {
+    padding: 2rem 0;
+  }
+
+  .navbar .navbar-toggler{
+    display: block;
+    float: right;
+    height: 2rem;
+    background-color: transparent;
+    color: #083232;
+    border: 2px solid #083232;
+    outline: none;
+    padding: 0.2rem;
+    cursor: pointer;
+  }
+  .navbar .navbar-toggler span,
+  .navbar .navbar-toggler span::before,
+  .navbar .navbar-toggler span::after {
+    display: block;
+    content: '';
+    background-color: #083232;
+    height: 3px;
+    width: 1.7rem;
+    border-radius: 4px;
+    transition: all ease-in-out 0.3s;
+  }
+  .navbar .navbar-toggler span::before {
+    transform: translateY(-8px);
+  }
+  .navbar .navbar-toggler span::after {
+    transform: translateY(5px);
+  }
+
+  .navbar .navbar-toggler.open-navbar-toggler span {
+    background-color: transparent;
+  }
+  .navbar .navbar-toggler.open-navbar-toggler span::before {
+    transform: translateY(0px) rotate(45deg);
+  }
+  .navbar .navbar-toggler.open-navbar-toggler span::after {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+
+  .avatar-container{
+    width: 80%;
+    height: auto;
+  }
+
+  .hero-line{
+    font-size: 2.6rem;
+  }
+
+  .description{
+    font-size: 1.3rem;
+  }
+
+  .media{
+    padding-bottom: 5rem;
+  }
+
+  .education, .qa{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .qa{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .education-image img {
+    width: 70%;
+    margin-bottom: 3rem;
+  }
+
+  .qa-image img{
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+
+  .yellow-svg{
+    display: none;
+  }
+
+  .yellow-svg-mobile{
+    display: block;
+  }
+
+  .yellow-svg-mobile img{
+    position: absolute;
+    height: auto;
+    width: 100%;
+    left: 0;
+    top: 385%;
+    z-index: -1;
+  }
+
+  .card{
+    margin: 1rem auto;
+    width: 23rem;
+    height: 35rem;
+  }
+
+  .card{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .pb-mobile{
+    padding-bottom: 5rem;
+  }
+
+  .banner-hobbie img{
+    width: 95%;
+  }
+
+  .project-container img{
+    width: 80%;
+    margin-bottom: 0;
+  }
+
+  .text-right {
+    text-align: left;
+  }
+}
+
+/* .home{
+  background-color: deeppink;
+}
+
+.skills{
+
+  background-color: darkcyan;
+}
+
+.mini-projects{
+  background-color: coral;
+} */
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
