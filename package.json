@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "parcel build index.html --public-url ./",
-    "dev": "parcel  index.html watch"
+    "dev": "parcel index.html watch"
   },
   "devDependencies": {
     "bootstrap": "4.2.1",
