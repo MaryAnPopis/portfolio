@@ -7,27 +7,34 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mariam Domínguez</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
   <header>
     <div class="container">
-      <nav class="navbar">
-        <a href="mailto:dguezmari@gmail.com?Subject=Hello" class="navbar-brand">contact me</a>
+      <nav class="vertical-nav" id="navbar">
         <button class="navbar-toggler">
           <span></span>
         </button>
-        <ul>
-          <li><a href=".home">about me</a></li>
-          <li><a href="#">skills</a></li>
-          <li><a href="#">mini projects</a></li>
-          <li><a href="#">hobbies</a></li>
+        <ul class="navbar-list">
+          <li><a href="#home" class="active link"><span class=" cd-dot"></span><span class="cd-label">Home</span></a></li>
+          <li><a href="#education" class="link"><span class="cd-dot"></span><span class="cd-label">Education</span></a></li>
+          <li><a href="#qa-experience" class="link"><span class="cd-dot"></span><span class="cd-label">Experience</span></a></li>
+          <li><a href="#skills" class="link"><span class="cd-dot"></span><span class="cd-label">Skills</span></a></li>
+          <li><a href="#mini-projects" class="link"><span class="cd-dot"></span><span class="cd-label">Mini projects</span></a></li>
+          <li><a href="#hobbies" class="link"><span class="cd-dot"></span><span class="cd-label">Hobbies</span></a></li>
+          <li><a href="mailto:dguezmari@gmail.com?Subject=Hello" class="navbar-brand"><span class="cd-dot"></span><span
+                class="cd-label">Contact me</span></a></li>
         </ul>
       </nav>
+
     </div>
   </header>
   <main>
-    <section class="home">
+    <section class="home section" id="home">
       <div class="container hero">
         <div class="row reverse-position-mobile">
           <div class="col-md-6 col-sm-12 ">
@@ -68,6 +75,8 @@
           </div>
         </div>
       </div>
+    </section>
+    <section id="education" class="section">
       <div class="container">
         <div class="row education">
           <div class="col-sm-12 col-md-6">
@@ -86,6 +95,10 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section id="qa-experience" class="qa-experience section">
+      <div class="container">
         <div class="row qa">
           <div class="col-sm-12 col-md-6">
             <div class="description">
@@ -105,7 +118,8 @@
         </div>
       </div>
     </section>
-    <section class="skills">
+
+    <section class="skills section" id="skills">
       <div class="container">
         <h2>Skills</h2>
         <div class="row">
@@ -221,7 +235,7 @@
         <img src="./img/yellow-mobile.svg" alt="background image">
       </div>
     </section>
-    <section class="mini-projects">
+    <section class="mini-projects section" id="mini-projects">
       <div class="container">
         <h2>Mini projects</h2>
         <div class="row">
@@ -266,7 +280,7 @@
         </div>
       </div>
     </section>
-    <section class="hobbies">
+    <section class="hobbies section" id="hobbies">
       <div class="container">
         <h2>Hobbies</h2>
       </div>
